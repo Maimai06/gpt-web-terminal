@@ -467,7 +467,15 @@ onMounted(() => {
   terminal.writeTextOutput("<span style='color: red'>&nbsp;&nbsp; - You can only use GPT-3.5 Model if you are not a OpenAI-paying user.</span>")
   terminal.writeTextOutput("<span style='color: red'>&nbsp;&nbsp; - You can only request Open AI 3 times per minute if you are not a OpenAI-paying user.</span>")
   terminal.writeTextOutput("<br/>")
-  terminal.writeTextOutput(`Link: <a href="//platform.openai.com/docs/guides/rate-limits/overview" target="_blank">Open AI</a>`)
+  terminal.writeTextOutput("<span style='color: white'>tips: </span>")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - k - 角色唯一标识，例如: default / cli / sql / ikun</span>")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - n - 角色名，例如：命令行翻译助手、SQL-BOY</span>")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - d - 角色描述，例如：将你的自然语言指令翻译为 Window/Unix 终端命令")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - 示例：gpt diy <-k GPT 角色唯一标识> <-n GPT 角色名> <-d GPT 角色描述>")
+  terminal.writeTextOutput("<br/>");
+  terminal.writeTextOutput("<span style='color: white'>快速解锁命令用法 - 命令行中使用help命令查询使用方法: </span>")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - help #查询全部命令帮助</span>")
+  terminal.writeTextOutput("<span style='color: white'>&nbsp;&nbsp; - gpt -h / gpt chat -h /gpt role -h /g gpt history -h /......")
   terminal.writeTextOutput("<br/>");
 });
 
